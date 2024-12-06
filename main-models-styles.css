@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: darkgreen;
+    font-family: Verdana, sans-serif;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.btn-copy {
+    width: 100%;
+    text-align: center;
+}

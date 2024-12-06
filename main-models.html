@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upscayl Model Reference (Main Models)</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Google Fonts for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Verdana&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link href="main-models-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Upscayl Model Reference</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main-models.html">Main Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="custom-models-1.html">Custom Models 1</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center">Upscayl Model Reference (Main Models)</h2>
+        <p class="text-center">Click on a model name or path to copy it to the clipboard!</p>
+
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-success">
+                <tr>
+                    <th>Model</th>
+                    <th>Description</th>
+                    <th>Path</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-dark w-100"
+                            onclick="copyToClipboard('realesrgan-x4plus')">realesrgan-x4plus</button>
+                    </td>
+                    <td>The realesrgan-x4plus model is a general-purpose image upscaling model designed to enhance the
+                        quality of images, whether they are photos, illustrations, or digital art. It uses the
+                        Real-ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks) technology, which is
+                        based on advanced machine learning techniques to upscale low-resolution images while preserving
+                        details and improving clarity.
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>General-Purpose</li>
+                            <li>Upscaling Factor: x4</li>
+                            <li>High-Quality Results</li>
+                        </ul>
+                        <strong>Use Cases:</strong>
+                        <ul>
+                            <li>Restoring Low-Resolution Images</li>
+                            <li>Enhancing Artwork</li>
+                            <li>Photographic Enhancements</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <button class="btn btn-outline-secondary w-100"
+                            onclick="copyToClipboard('/content/squashfs-root/resources/models/realesrgan-x4plus')">Path</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-dark w-100"
+                            onclick="copyToClipboard('realesrgan-x4plus-anime')">realesrgan-x4plus-anime</button>
+                    </td>
+                    <td>Specialized for anime-style images. Focuses on preserving fine line art and vibrant colors.</td>
+                    <td>
+                        <button class="btn btn-outline-secondary w-100"
+                            onclick="copyToClipboard('/content/squashfs-root/resources/models/realesrgan-x4plus-anime')">Path</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-dark w-100"
+                            onclick="copyToClipboard('realesrgan-x4fast')">realesrgan-x4fast</button>
+                    </td>
+                    <td>Real-ESRGAN x4-fast is a variant of the Real-ESRGAN (Real-Enhanced Super-Resolution Generative
+                        Adversarial Network) model, optimized specifically for faster inference and real-time upscaling.
+
+                        Key Characteristics:
+                        Upscaling Factor:
+
+                        4x: This model is designed to upscale images by 4x, meaning it enhances the resolution of an
+                        image to four times its original size. This is useful for enlarging images while attempting to
+                        preserve as much detail as possible.
+                        Optimized for Speed:
+
+                        The x4-fast variant is designed to perform the image upscaling process quickly, making it
+                        suitable for scenarios where speed is a priority (e.g., processing a large batch of images or
+                        real-time video upscaling). It achieves this by potentially sacrificing a small amount of image
+                        quality to gain faster inference times.
+                        Use of GANs (Generative Adversarial Networks):
+
+                        Like the standard Real-ESRGAN model, x4-fast uses GANs to perform image upscaling. The GAN
+                        architecture helps in improving the quality of the upscaled image by learning patterns from
+                        high-resolution training datasets, improving detail retention and texture during the upscaling
+                        process.
+                        Realistic Texture Generation:
+
+                        The model aims to preserve realistic textures and avoid common artifacts that arise in
+                        traditional upscaling methods, like blurring or pixelation. This is achieved using the
+                        generative adversarial network’s architecture, which includes a discriminator to assess the
+                        quality of upscaled images.
+                        Faster Upscaling with Slight Quality Trade-off:
+
+                        The "fast" nature of the model means that it may slightly sacrifice quality for speed. However,
+                        it still performs exceptionally well compared to other fast upscaling models, as it’s designed
+                        to minimize noticeable artifacts while maintaining acceptable quality.
+                        Performance:
+
+                        The model is designed to be lightweight and efficient compared to other Real-ESRGAN models that
+                        prioritize the highest quality. This makes it a great choice for situations requiring quick
+                        upscaling, like real-time video processing, quick batch processing of images, or web
+                        applications where performance is a key concern.
+                        Deployment Use Cases:
+
+                        Real-time applications such as video upscaling.
+                        Large-scale batch processing of images.
+                        Mobile applications and environments with limited computational resources.
+                        Training on Diverse Datasets:
+
+                        Like other Real-ESRGAN models, the x4-fast version is trained on a variety of datasets to ensure
+                        it works well on diverse images, from natural photos to digital artwork. It can handle photos,
+                        art, and anime-style images and generally does a great job of upscaling different types of
+                        content.
+                        Minimal Artifacts:
+
+                        While "fast" versions typically introduce some trade-offs in quality (such as minor blurriness
+                        or artifacts), Real-ESRGAN x4-fast attempts to keep those artifacts minimal compared to other
+                        fast upscaling solutions.
+                        When to Use Real-ESRGAN x4-fast
+                        For real-time applications (e.g., live video upscaling).
+                        When you need to upscale a large number of images quickly.
+                        On devices with lower computational power (e.g., mobile, edge computing).
+                        For scenarios where slightly reduced image quality is acceptable in exchange for faster
+                        processing times.</td>
+                    <td>
+                        <button class="btn btn-outline-secondary w-100"
+                            onclick="copyToClipboard('/content/squashfs-root/resources/models/realesrgan-x4fast')">Path</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-dark w-100" onclick="copyToClipboard('remacri')">remacri</button>
+                    </td>
+                    <td>The Remacri model is designed specifically to restore fine details in low-resolution images,
+                        often used for enhancing photographs, artwork, scientific imaging, and other image types that
+                        require high detail retention. It’s another GAN-based model but with an emphasis on recovering
+                        and enhancing details without introducing significant artifacts.
+
+                        Key Characteristics of Remacri:
+                        Upscaling Factor:
+
+                        The Remacri model can upscale images to multiple resolutions, often 4x or higher (depending on
+                        the specific version). The focus is not just on enlarging the image but on enhancing fine
+                        textures and details that may be lost in low-resolution images.
+                        Deep Learning-based Super-Resolution:
+
+                        Remacri is based on deep learning techniques, typically using a convolutional neural network
+                        (CNN) architecture, specifically tailored to super-resolution tasks. It enhances the image by
+                        learning complex patterns from high-resolution images and transferring these learned features to
+                        low-resolution images.
+                        Texture Preservation:
+
+                        One of the standout features of Remacri is its ability to preserve textures in the upscaled
+                        image. It works particularly well with fine details in textures such as skin, fabric, or
+                        architectural elements. Fine-grain details are retained during the upscaling process.
+                        Reduction of Artifacts:
+
+                        Artifacts, which are common in some upscaling algorithms (such as blurring or blockiness), are
+                        minimized. The Remacri model is designed to reduce or eliminate artifacts that may appear when
+                        you upscale images, making the results more natural and closer to what a high-quality, real
+                        image would look like.
+                        Image Enhancement:
+
+                        In addition to just upscaling, the model is also capable of enhancing other aspects of the
+                        image, such as sharpening edges, restoring faded details, and improving contrast. This makes it
+                        a good choice for restoring old or low-quality images.
+                        Training Datasets:
+
+                        Like other high-quality upscaling models, Remacri has been trained on large datasets of images
+                        across various domains, such as landscape photographs, portraits, and scientific imagery, to
+                        ensure it can generalize well across different types of content.
+                        Application Areas:
+
+                        Restoring old photographs (such as scanned or old family photos).
+                        Enhancing medical or scientific images where clarity and detail are important.
+                        Enhancing artwork or digital art where the focus is on preserving artistic details.
+                        Improving details in images from low-resolution cameras or other sources.
+                        Speed vs. Quality Trade-off:
+
+                        Remacri is generally considered slower than faster models like Real-ESRGAN's x4-fast, but the
+                        trade-off is a higher level of detail retention. It's often used when quality is more important
+                        than the speed of processing.
+                        Post-Processing Enhancements:
+
+                        Some implementations of Remacri also include post-processing capabilities, such as noise
+                        reduction or artifact cleanup, to ensure the upscaled image is as clean and detailed as
+                        possible.
+                        Optimized for Fine Detail:
+
+                        Remacri is particularly effective for images with fine textures like fabric details, skin pores,
+                        and hair, making it a great choice for tasks where detail preservation is critical.</td>
+                    <td>
+                        <button class="btn btn-outline-secondary w-100"
+                            onclick="copyToClipboard('/content/squashfs-root/resources/models/remacri')">Path</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-dark w-100"
+                            onclick="copyToClipboard('ultrasharp')">ultrasharp</button>
+                    </td>
+                    <td>The UltraSharp model is another image upscaling model designed to enhance images with a focus on
+                        sharpness, detail preservation, and high-quality results. This model is often used when the goal
+                        is to maintain or improve the clarity and detail of an image while increasing its resolution.
+                        While there are various variants and versions of UltraSharp models, they generally share the
+                        goal of improving image quality through super-resolution techniques.
+
+                        Here’s a summary of the UltraSharp model and its key characteristics:
+
+                        UltraSharp Model Overview
+                        The UltraSharp model is typically used for upscaling images to a higher resolution, with a
+                        special focus on making the resulting image look sharper and more detailed. It’s designed for
+                        tasks that demand not just resolution improvement but also the enhancement of fine textures and
+                        edge clarity.
+
+                        Key Characteristics of the UltraSharp Model
+                        Upscaling Factor:
+
+                        Like many super-resolution models, UltraSharp typically operates with an upscaling factor of 2x,
+                        4x, or even 8x. It is designed to increase the resolution of an image while ensuring that the
+                        finer details and sharpness are preserved or even improved.
+                        Focus on Sharpness and Clarity:
+
+                        The main feature of the UltraSharp model is its ability to enhance sharpness. Unlike some
+                        upscaling models that may smooth out details or create artifacts, UltraSharp is specifically
+                        tuned to preserve edge clarity, fine textures, and contrast. It’s a great option for
+                        applications where the sharpness of an image is critical, such as in digital photography,
+                        product images, and architectural photos.
+                        Detail Preservation:
+
+                        UltraSharp is optimized to preserve the fine details in the image while scaling it up. This
+                        means textures, small features, and intricate parts of an image are kept intact and even
+                        enhanced in some cases. It aims to restore details that may be lost during upscaling, often
+                        making the output look more natural than other models that may introduce artificial textures.
+                        Artifact Reduction:
+
+                        One of the main advantages of the UltraSharp model is its ability to reduce artifacts that are
+                        commonly found in low-resolution images. These include issues like blockiness, blurring, and
+                        pixelation. UltraSharp works to avoid or minimize these kinds of artifacts, especially when
+                        enhancing edges or fine details.
+                        Optimized for Clarity:
+
+                        Unlike some models that prioritize smoothness or overall image appearance, UltraSharp is
+                        explicitly designed to optimize clarity. This means the model often works better with images
+                        that contain fine lines, textures, and details that need to be sharpened or highlighted.
+                        Use Cases:
+
+                        Photography: UltraSharp is excellent for enhancing the sharpness of photos that need to look
+                        crisper and clearer.
+                        Architectural Images: It's particularly useful for images where fine textures and edges need to
+                        be preserved (e.g., buildings, interiors, and structures).
+                        Product Photography: When working with product images, especially when showcasing small details
+                        or textures of objects, UltraSharp can make them appear more detailed and professional.
+                        Artworks: Artists might use this model to upscale and sharpen high-resolution images of their
+                        digital art or traditional artwork scans.
+                        Text Enhancement: UltraSharp can also be used for upscaling and sharpening text-based images,
+                        such as diagrams, graphs, or scanned documents.
+                        Speed vs. Quality Trade-Off:
+
+                        Like many high-quality models, UltraSharp may come at a cost of slower processing speed,
+                        especially when compared to models that are optimized for faster upscaling (like Real-ESRGAN
+                        with its x4-fast variant). However, the trade-off is in the enhanced sharpness and detail
+                        preservation.
+                        Post-Processing Enhancements:
+
+                        Some implementations of UltraSharp also provide post-processing features to further improve the
+                        image. For example, noise reduction can help eliminate any graininess in the image, while
+                        contrast adjustments can make the sharpness even more pronounced.
+                        Advanced Image Restoration:
+
+                        In addition to basic upscaling, UltraSharp can restore some lost details in low-resolution or
+                        heavily compressed images. This makes it ideal for enhancing old photographs, low-quality
+                        digital images, and images that suffer from compression artifacts.</td>
+                    <td>
+                        <button class="btn btn-outline-secondary w-100"
+                            onclick="copyToClipboard('/content/squashfs-root/resources/models/ultrasharp')">Path</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-outline-dark w-100"
+                            onclick="copyToClipboard('ultramix_balanced')">ultramix_balanced</button>
+                    </td>
+                    <td>The UltraMix_Balanced model is typically designed to offer a balanced trade-off between speed
+                        and image quality. It is often used when a versatile and efficient approach to image upscaling
+                        is needed, without sacrificing too much in terms of either detail preservation or processing
+                        speed.
+
+                        Key Characteristics of UltraMix_Balanced
+                        Upscaling Factor:
+
+                        Like most super-resolution models, UltraMix_Balanced typically works with upscaling factors of
+                        2x, 4x, and sometimes 8x. It can upscale images from low to higher resolutions, while
+                        maintaining a balanced image quality.
+                        Balance Between Speed and Quality:
+
+                        UltraMix_Balanced is particularly noted for being optimized for performance while still
+                        delivering high-quality results. It is typically designed to process images faster than models
+                        that prioritize maximum detail preservation (such as UltraSharp), while still ensuring that the
+                        image quality remains sharp and detailed. This makes it a great choice for batch processing or
+                        tasks where speed is important but quality cannot be compromised entirely.
+                        Preservation of Fine Details:
+
+                        While UltraMix_Balanced doesn’t focus exclusively on maximal sharpness like UltraSharp, it still
+                        does a great job of preserving important details in an image. This includes texture details,
+                        edge clarity, and other fine features that would be important for applications like photo
+                        restoration, digital art enhancement, or image quality improvement.
+                        Reduced Artifacts:
+
+                        The model is designed to minimize common artifacts found in low-resolution images, such as
+                        pixelation, blurring, and blockiness. However, compared to models like RealESRGAN,
+                        UltraMix_Balanced may prioritize speed slightly more while maintaining a balanced quality across
+                        various image types.
+                        Versatility:
+
+                        UltraMix_Balanced is a versatile model that works well for a wide range of images, including
+                        photographs, digital artwork, textures, and product photos. Because it doesn’t overly emphasize
+                        any single aspect (e.g., sharpness or noise reduction), it’s effective across different types of
+                        imagery and provides consistent, reliable results.
+                        Optimized for General Use:
+
+                        Unlike models that are highly specialized for specific types of images (e.g., UltraSharp for
+                        sharpness, RealESRGAN for restoration), UltraMix_Balanced is designed to work well in
+                        general-purpose image upscaling. It is ideal for tasks that require upscaling without requiring
+                        any extreme enhancement in sharpness or detail.
+                        Noise Reduction:
+
+                        While not as specialized for noise reduction as some other models, UltraMix_Balanced still
+                        incorporates moderate noise reduction techniques. It can be helpful in cleaning up noisy or
+                        grainy images that often come with lower-resolution inputs.
+                        Efficient Resource Usage:
+
+                        Due to its focus on balancing speed and quality, UltraMix_Balanced is often more efficient in
+                        terms of resource consumption (e.g., memory and processing power) compared to models designed
+                        for high-quality, detailed image enhancement. This makes it suitable for batch processing or
+                        real-time applications where resource efficiency is critical.
+                        Training and Data:
+
+                        Like many other upscaling models, UltraMix_Balanced has been trained on a variety of
+                        high-quality image datasets. These datasets typically include a mix of photographs, digital art,
+                        textures, and other image types to ensure that the model can handle different types of content.
+                        Use Cases for UltraMix_Balanced
+                        General Image Upscaling:
+
+                        When you need to upscale images for general purposes, such as enhancing photographs, improving
+                        digital art, or processing product images for e-commerce, UltraMix_Balanced is a solid choice.
+                        It is versatile and capable of delivering good quality with relatively faster processing
+                        compared to other high-precision models.
+                        Batch Processing:
+
+                        If you're working with a large number of images, UltraMix_Balanced is a great model for batch
+                        processing. The model's ability to deliver balanced results quickly makes it efficient when
+                        working on many images at once.
+                        Improving Image Quality:
+
+                        UltraMix_Balanced is useful when you need to improve the quality of low-resolution images
+                        without needing extreme detail enhancement. It's particularly effective when preserving overall
+                        quality is more important than perfecting fine details.
+                        Real-Time Applications:
+
+                        Since this model offers a balance between quality and processing time, it can be used in
+                        real-time applications where the image must be processed quickly, such as real-time image
+                        enhancements in video games, social media posts, or live content.
+                        Texture Enhancement:
+
+                        For textures in digital artwork or 3D models, UltraMix_Balanced can be used to enhance visual
+                        details without compromising texture fidelity.
+                        Comparison to Other Models
+                        UltraMix_Balanced vs. UltraSharp:
+
+                        UltraSharp focuses heavily on sharpening edges and fine details, providing high-quality results
+                        at the expense of processing speed. UltraMix_Balanced, on the other hand, provides a more
+                        balanced approach between speed and image quality, making it suitable for general use cases.
+                        UltraSharp would be better for tasks requiring maximum sharpness, while UltraMix_Balanced is
+                        ideal when speed and versatility are just as important as image enhancement.
+                        UltraMix_Balanced vs. RealESRGAN:
+
+                        RealESRGAN focuses primarily on image restoration and noise reduction, with specialized models
+                        like RealESRGAN_x4 for improving low-resolution images. UltraMix_Balanced can still handle image
+                        restoration but with an emphasis on providing a balanced result, making it faster and more
+                        efficient for general purposes.
+                        If restoration and noise reduction are top priorities, RealESRGAN might be a better choice, but
+                        if you're looking for a well-rounded upscaling model that balances speed and quality,
+                        UltraMix_Balanced excels.</td>
+                    <td>
+                        <button class="btn btn-outline-secondary w-100"
+                            onclick="copyToClipboard('/content/squashfs-root/resources/models/ultramix_balanced')">Path</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap 5 JS (Optional, for alerts or other JS features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
