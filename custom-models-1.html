@@ -8,6 +8,7 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="custom-models-styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,6 +37,21 @@
     </nav>
 
     <div class="container">
+        <!-- Button Panel -->
+        <div class="button-panel">
+            <button type="button" onclick="copyToClipboard('/content/squashfs-root/resources/models')"
+                class="btn btn-danger rounded-pill shadow-lg">Colab Main Models</button>
+
+            <button type="button" onclick="copyToClipboard('/content/custom-models/custom-models-main/models')"
+                class="btn btn-secondary rounded-pill shadow-lg">Colab Custom Models 1</button>
+
+            <button type="button" onclick="copyToClipboard('C:/Program Files/Upscayl/resources/models')"
+                class="btn btn-success rounded-pill shadow-lg">Local Main Models</button>
+
+            <button type="button" onclick="copyToClipboard('D:/Upscayl/models')"
+                class="btn btn-danger rounded-pill shadow-lg">Local Custom Models 1</button>
+        </div>
+
         <h2>Upscayl Model Reference (CUSTOM MODELS 1)</h2>
         <p>Click on a model name or path to copy it to the clipboard!</p>
 
@@ -248,14 +264,17 @@
                                 textures and patterns</strong>, especially when upscaling images that require
                             <strong>fine detail retention</strong>, such as architectural photographs, fabric close-ups,
                             or detailed artworks. It also minimizes blurriness and artifacts that could typically arise
-                            from low-resolution sources.</p>
+                            from low-resolution sources.
+                        </p>
                         <p>The "C" in the model name likely stands for a specific configuration or a
                             <strong>"compact"</strong> version of the original model, indicating a more optimized
-                            version with similar or improved performance, while being more resource-efficient.</p>
+                            version with similar or improved performance, while being more resource-efficient.
+                        </p>
                         <p>This model is ideal for users looking to achieve <strong>high-quality upscaling</strong>
                             while maintaining the subtle details of low-resolution images. It strikes a balance between
                             <strong>performance and quality</strong>, especially useful for cases where preserving
-                            delicate structures is crucial.</p>
+                            delicate structures is crucial.
+                        </p>
                     </td>
                     <td>
                         <button class="btn btn-outline-dark w-100"

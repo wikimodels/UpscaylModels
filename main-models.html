@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Verdana&display=swap" rel="stylesheet">
     <!-- External CSS -->
     <link href="main-models-styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,6 +41,20 @@
     </nav>
 
     <div class="container">
+        <!-- Button Panel -->
+        <div class="button-panel">
+            <button type="button" onclick="copyToClipboard('/content/squashfs-root/resources/models')"
+                class="btn btn-danger rounded-pill shadow-lg">Colab Main Models</button>
+
+            <button type="button" onclick="copyToClipboard('/content/custom-models/custom-models-main/models')"
+                class="btn btn-secondary rounded-pill shadow-lg">Colab Custom Models 1</button>
+
+            <button type="button" onclick="copyToClipboard('C:/Program Files/Upscayl/resources/models')"
+                class="btn btn-success rounded-pill shadow-lg">Local Main Models</button>
+
+            <button type="button" onclick="copyToClipboard('D:/Upscayl/models')"
+                class="btn btn-danger rounded-pill shadow-lg">Local Custom Models 1</button>
+        </div>
         <h2 class="text-center">Upscayl Model Reference (Main Models)</h2>
         <p class="text-center">Click on a model name or path to copy it to the clipboard!</p>
 
